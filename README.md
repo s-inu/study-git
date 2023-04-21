@@ -1,6 +1,5 @@
 # study-git
 ## myAlias
-[alias] <br />
 	a = "!f() { git add . && git commit -am "$1"; }; f" <br />
 	am = commit --amend <br />
 	amm = commit --amend -m <br />
@@ -47,6 +46,5 @@
 	sub = submodule <br />
 	subadd = submodule add <br />
 	subst = submodule status <br />
-	test = lgg <br />
 	w = "!f() { git checkout $1 && git merge -; }; f" <br />
 	wm = "!f() { git checkout $1 && git merge - -m "$2"; }; f" <br />
