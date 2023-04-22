@@ -1,9 +1,9 @@
 # study-git
 ## myAlias
-	a = "!f() { git add . && git commit -am "$1"; }; f"
+	a = "!f() { git add . && git commit -am \"$1\"; }; f"
 	am = commit --amend
 	amm = commit --amend -m
-	as = "!f() { git config --global alias.$1 "$2"; }; f"
+	as = "!f() { git config --global alias.$1 \"$2\"; }; f"
 	br = branch
 	bra = branch -a
 	brd = branch -d
