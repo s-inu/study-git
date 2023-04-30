@@ -1,5 +1,3 @@
-# study-git
-## myAlias
 	a = "!f() { git add . && git commit -am \"$1\"; }; f"
 	am = commit --amend
 	amm = commit --amend -m
