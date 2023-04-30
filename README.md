@@ -5,6 +5,7 @@
 	amm = commit --amend -m
 	as = "!f() { git config --global alias.$1 \"$2\"; }; f"
 	br = branch
+	brM = branch -M
 	bra = branch -a
 	brd = branch -d
 	brm = branch -m
@@ -21,6 +22,7 @@
 	co = checkout
 	cob = checkout -b
 	cr = !git status -s | grep -e "^\\?\\?" | cut -c 4- | xargs rm -r
+	df = diff
 	fta = fetch -a
 	ig = !echo '' >> .gitignore && git status -s | grep -e "^\\?\\?" | cut -c 4- >> .gitignore
 	lg = log
@@ -33,6 +35,10 @@
 	mg = merge
 	mga = merge --abort
 	mgm = "!f() { git merge $1 -m "$2"; }; f"
+	mgx = merge -X
+	pl = pull
+	ps = push
+	psu = push -u
 	rb = rebase
 	rbot = rebase --onto
 	re = restore
@@ -40,7 +46,10 @@
 	rlg = reflog
 	rs = reset
 	rsh = reset --hard
+	rsm = reset --mixed
 	rss = reset --soft
+	sh = stash
+	ss = stash
 	st = status
 	sts = status -s
 	sub = submodule
